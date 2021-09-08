@@ -54,6 +54,7 @@ public class Bullet {
 			Client.INSTANCE.send(new TankDieMsg(this.id, tank.getId()));
 		}
 		
+<<<<<<< HEAD
 	}
 
 	public void die() {
@@ -100,6 +101,12 @@ public class Bullet {
 			y += SPEED;
 			break;
 		}
+=======
+		Color c = g.getColor();
+		g.setColor(Color.RED);
+		g.fillOval(x, y, WIDTH, HEIGHT);
+		g.setColor(c);
+>>>>>>> parent of f901488 (子弹换成图片)
 		
 		//update rect
 		rect.x = this.x;

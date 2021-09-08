@@ -6,14 +6,19 @@ import java.io.IOException;
 import javax.imageio.ImageIO;
 
 public class ResourceMgr {
+<<<<<<< HEAD
 	public static BufferedImage goodTankL, goodTankU, goodTankR, goodTankD; 
 	public static BufferedImage badTankL, badTankU, badTankR, badTankD; 
 	public static BufferedImage bulletL, bulletU, bulletR, bulletD; 
 	public static BufferedImage[] explodes = new BufferedImage[16];
+=======
+	public static BufferedImage tankL, tankU, tankR, tankD; 
+>>>>>>> parent of f901488 (子弹换成图片)
 	
  	
 	static {
 		try {
+<<<<<<< HEAD
 			goodTankU = ImageIO.read(ResourceMgr.class.getClassLoader().getResourceAsStream("images/GoodTank1.png"));
 			goodTankL = ImageUtil.rotateImage(goodTankU, -90);
 			goodTankR = ImageUtil.rotateImage(goodTankU, 90);
@@ -31,6 +36,12 @@ public class ResourceMgr {
 			
 			for(int i=0; i<16; i++) 
 				explodes[i] = ImageIO.read(ResourceMgr.class.getClassLoader().getResourceAsStream("images/e" + (i+1) + ".gif"));
+=======
+			tankL = ImageIO.read(ResourceMgr.class.getClassLoader().getResourceAsStream("images/tankL.gif"));
+			tankU = ImageIO.read(ResourceMgr.class.getClassLoader().getResourceAsStream("images/tankU.gif"));
+			tankR = ImageIO.read(ResourceMgr.class.getClassLoader().getResourceAsStream("images/tankR.gif"));
+			tankD = ImageIO.read(ResourceMgr.class.getClassLoader().getResourceAsStream("images/tankD.gif"));
+>>>>>>> parent of f901488 (子弹换成图片)
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
