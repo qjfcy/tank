@@ -55,6 +55,7 @@ public class Bullet {
 		}
 		
 <<<<<<< HEAD
+<<<<<<< HEAD
 	}
 
 	public void die() {
@@ -102,10 +103,13 @@ public class Bullet {
 			break;
 		}
 =======
+=======
+>>>>>>> parent of f901488 (子弹换成图片)
 		Color c = g.getColor();
 		g.setColor(Color.RED);
 		g.fillOval(x, y, WIDTH, HEIGHT);
 		g.setColor(c);
+<<<<<<< HEAD
 >>>>>>> parent of f901488 (子弹换成图片)
 		
 		//update rect
@@ -113,6 +117,8 @@ public class Bullet {
 		rect.y = this.y;
 		
 		if(x < 0 || y < 0 || x > TankFrame.GAME_WIDTH || y > TankFrame.GAME_HEIGHT) living = false;
+=======
+>>>>>>> parent of f901488 (子弹换成图片)
 		
 	}
 	public void paint(Graphics g) {
