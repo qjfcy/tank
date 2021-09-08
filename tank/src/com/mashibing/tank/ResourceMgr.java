@@ -8,10 +8,14 @@ import javax.imageio.ImageIO;
 public class ResourceMgr {
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 	public static BufferedImage goodTankL, goodTankU, goodTankR, goodTankD; 
 	public static BufferedImage badTankL, badTankU, badTankR, badTankD; 
 	public static BufferedImage bulletL, bulletU, bulletR, bulletD; 
 	public static BufferedImage[] explodes = new BufferedImage[16];
+=======
+	public static BufferedImage tankL, tankU, tankR, tankD; 
+>>>>>>> parent of f901488 (子弹换成图片)
 =======
 	public static BufferedImage tankL, tankU, tankR, tankD; 
 >>>>>>> parent of f901488 (子弹换成图片)
@@ -46,6 +50,9 @@ public class ResourceMgr {
 			tankR = ImageIO.read(ResourceMgr.class.getClassLoader().getResourceAsStream("images/tankR.gif"));
 			tankD = ImageIO.read(ResourceMgr.class.getClassLoader().getResourceAsStream("images/tankD.gif"));
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> parent of f901488 (子弹换成图片)
+=======
 >>>>>>> parent of f901488 (子弹换成图片)
 =======
 >>>>>>> parent of f901488 (子弹换成图片)
